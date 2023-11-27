@@ -22,9 +22,24 @@ function setStyle(colorbg, colorte, colortb, colortt) {
         background-color: ` + colortb + ` !important;
     }
 
-    .smsc-topnav .topnav__menu-arrow:after {
+    .smsc-topnav .topnav__menu-arrow:after , {
         border-color: ` + colorbg + ` transparent !important;
     }
+
+    [dialog-content], .msgContent, .table-page .table-page__container__wrapper__table .cell--fixed, .row--course .cell--spacer{
+        background-color: ` + colorbg + ` !important;
+    }
+    .form__value {
+        color: ` + colortt + ` !important;
+    }
+    .form__label {
+        color: ` + colortt + ` !important;
+    }
+    #msgdetail, #agenda_main, .eval_grid_graph, #uploadzone, #tree, #resizeHandle, #mod_content_center, .searchInputField, #subjectInput, #navNext, #navPrev, .calendarMainTable, .smsc_cm_body_row_block, .smsc_cm_body_row_block_indien, .searchInputField{
+        color: ` + colorte + ` !important;
+        background-color: ` + colorbg + ` !important;
+    }
+
     `;
     document.head.appendChild(style);
 }
